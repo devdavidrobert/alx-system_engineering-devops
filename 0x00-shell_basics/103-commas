@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1A | sed -E '/^\.+$/d; s/^(.*\/)$/1/; /^[0-9]/s/^/0/; s/[^a-zA-Z0-9]//g; /^$/d' | paste -sd ',' -
+ls -1A | sed -E '/^\.+$/d' | sed -E 's/^(.*\/)$/1/' | sed -E '/^[0-9]/s/^/0/' | sed -E 's/[^a-zA-Z0-9]//g' | sed -E '/^$/d' | paste -sd ',' -
