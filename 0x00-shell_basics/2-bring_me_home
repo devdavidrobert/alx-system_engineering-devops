@@ -1,0 +1,4 @@
+#!/bin/bash
+home_dir=~
+cd "$home_dir"
+pwd
