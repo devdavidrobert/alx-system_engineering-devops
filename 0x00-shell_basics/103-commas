@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1A | sed -E '/^\.+$/d' | sed -E 's/^(.*\/)$/1/' | sed -E '/^[0-9]/s/^/0/' | sed -E 's/[^a-zA-Z0-9]//g' | sed -E '/^$/d' | paste -sd ',' -
+ls -a1 --group-directories-first | sed -E '/^\.{1,2}$/!s/(.*)(\/)$/\1/' | sed -E '/^[0-9]/s/^/0/' | sed -E '/^[^a-zA-Z0-9]/d' | sed -E '/^[0-9a-zA-Z]$/d' | paste -sd ',' -
