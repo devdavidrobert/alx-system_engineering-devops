@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -Ap | sort -d -k1.1,1.1 -k1.2n -k1.3n -k1.4n
+ls -1A | sed -E '/^\.+$/d; s/^(.*\/)$/1/; /^[0-9]/s/^/0/; s/[^a-zA-Z0-9]//g; /^$/d' | paste -sd ',' - && echo
+
