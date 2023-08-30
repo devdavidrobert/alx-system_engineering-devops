@@ -1,16 +1,2 @@
 #!/bin/bash
-Parent_dir=$(dirname $(pwd))
-for html_file in *.html; do
-if [ ! -e "$parent_dir/$html_file" ]; then
-cp "$html_file" "$parent_dir"
-echo "Copying $html_file to $parent_dir"
-else
-if [ "$html_file" -nt "$parent_dir/$html_file" ]; then
-cp "$html_file" "$parent_dir"
-echo "Updating $html_file in $parent_dir"
-else
-echo "$html_file already exists and is up to date in $parent_dir"
-fi
-fi
-done
-
+find . -maxdepth 1 -name "*.html" -newer ../ -exec cp -u {} ../ \;
