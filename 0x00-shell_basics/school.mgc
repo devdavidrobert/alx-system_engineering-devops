@@ -1,2 +1,2 @@
 #!/bin/bash
-0 string SCHOOL School data file
+file --mime-type -m <(echo '0 string SCHOOL School data file') * | grep -v ': *data$'
