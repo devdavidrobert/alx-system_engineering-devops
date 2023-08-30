@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -Ap | sort -d -k1.1,1.1 -k1.2n -k1.3n -k1.4n
