@@ -1,3 +1,2 @@
 #!/bin/bash
-cp /bin/ls .
-file --mime-type -m <(echo '0 string SCHOOL School data file') * | grep -v ': *data$'
+file -C -m school.mgcdef
