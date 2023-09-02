@@ -1,3 +1,1 @@
-0 string SCHOOL:1
->0   regex   \bSCHOOL\b
-!:mime School
+0 string SCHOOL School data
