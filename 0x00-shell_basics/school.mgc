@@ -1,2 +1,2 @@
-0       string          SchoolDataFile     # School data file identifier
->4      lelong          0x00000000          # Offset 4: 0x00000000
+0 string SCHOOL School data
+!:mime School
