@@ -1,6 +1,2 @@
-0       string          SchoolDataFile     # Check for a file identifier
->4      lelong          0x00000000          # Check for a specific value at offset 4
->>8     lelong          0x00000001          # Check for another specific value at offset 8
->>>12   leshort         0x1234              # Check for a specific short integer at offset 12
->>>>14  leshort         0x5678              # Check for another specific short integer at offset 14
->>>>>16 string          HeaderSignature     # Check for a unique header signature at offset 16
+0       string          SchoolDataFile     # School data file identifier
+>4      lelong          0x00000000          # Offset 4: 0x00000000
