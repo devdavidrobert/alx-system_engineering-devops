@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '*.gif' | sed 's/.*\///' | sort -f | sed 's/\.gif$//'
+cut -d":" -f 1,6 /etc/passwd | sort
