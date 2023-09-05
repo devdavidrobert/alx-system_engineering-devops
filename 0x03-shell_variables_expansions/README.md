@@ -1,5 +1,5 @@
-| Header 1 | Header 2 | Header 3 |
-| -------- | -------- | -------- |
-| Cell 1.1 | Cell 1.2 | Cell 1.3 |
-| Cell 2.1 | Cell 2.2 | Cell 2.3 |
-| Cell 3.1 | Cell 3.2 | Cell 3.3 |
+| File | Description |
+| -------- | -------- |
+| 0-alias | creates a script that creates an alias named _ls_ with the value of _rm *_|
+| Cell 2.1 | Cell 2.2 |
+| Cell 3.1 | Cell 3.2 |
